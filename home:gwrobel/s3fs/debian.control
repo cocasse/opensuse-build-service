@@ -1,0 +1,17 @@
+Source: s3fs
+Section: main
+Priority: optional
+Maintainer: Gunnar Wrobel <wrobel@pardus.de>
+Build-Depends: debhelper (>= 7), libcurl4-openssl-dev, libxml2-dev, libfuse-dev
+Standards-Version: 3.8.3
+Vcs-Svn: http://s3fs.googlecode.com/svn/trunk/
+Vcs-Browser: http://code.google.com/p/s3fs/source/browse/
+Homepage: http://code.google.com/p/s3fs/wiki/FuseOverAmazon
+
+Package: s3fs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: FUSE-based file system backed by Amazon S3 
+ s3fs is a fuse filesystem that allows you to mount an Amazon S3 bucket
+ as a local filesystem. It stores files natively and transparently in S3
+ (i.e., you can use other programs to access the same files).
