@@ -1,0 +1,18 @@
+Source: pardalys
+Section: main
+Priority: optional
+Maintainer: Gunnar Wrobel <wrobel@pardus.de>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Vcs-Git: https://github.com/wrobel/pardalys
+Vcs-Browser: https://github.com/wrobel/pardalys
+Homepage: http://www.pardus.de
+
+Package: pardalys
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, puppet
+Description: pardus puppet modules 
+ p@rdalys provides the full configuration set for the Kolab Server
+ (http://www.kolab.org) and is based on puppet
+ (http://reductivelabs.com/trac/puppet). Besides the configuration
+ data it provides Ruby extensions to puppet.
